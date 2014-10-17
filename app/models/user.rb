@@ -7,4 +7,6 @@ class User < ActiveRecord::Base
   has_many :recipes
   belongs_to :language
 
+  validates :language, presence: true
+
 end
